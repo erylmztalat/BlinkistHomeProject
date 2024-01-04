@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/spacing_xsmall"
+    android:padding="@dimen/spacing_xsmall"
+    android:background="@drawable/book_view_background"
+    android:elevation="@dimen/book_list_item_elevation"
+    android:clipToPadding="false">
+
+    <ImageView
+        android:id="@+id/coverImageView"
+        android:layout_width="@dimen/book_list_image_width"
+        android:layout_height="@dimen/book_list_image_height"
+        android:background="@drawable/book_view_background"
+        android:layout_marginBottom="@dimen/spacing_xsmall"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_medium"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:fontFamily="@font/cera_pro_medium"
+        android:layout_marginBottom="@dimen/spacing_xsmall"/>
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_extra_light"
+        android:fontFamily="@font/cera_pro_light"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginBottom="@dimen/spacing_xsmall"/>
+
+</LinearLayout>
